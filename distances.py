@@ -43,7 +43,7 @@ try:
   data = ul.urlopen(target_url)
 except ul.HTTPError as exception:
   print(exception)  
-  print("Неверно указана ссылка на данные")  
+  print("Wrong URL")  
   exit()
 lines = data.readlines()
 
@@ -101,4 +101,4 @@ if ((dist_on!=0) and (dist_off!=0)):
  print(dist_on)
  print(dist_off)
 else:
- print("Не получилось найти расстояния") 
+ print("Unnable to define distances") 
